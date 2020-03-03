@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>IdeaVimExtension</id>
   <name>IdeaVimExtension</name>
-  <version>1.4.3</version>
+  <version>1.4.4</version>
 
   <vendor
       email="hadix.lin@gmail.com"
