@@ -6,7 +6,7 @@ import io.github.hadixlin.iss.InputMethodSwitcher
 
 class WinInputMethodSwitcher : InputMethodSwitcher {
 
-    private var lastInputSource: Long = -1
+    private var lastInputSource: Long = 134481924
 
     override fun storeCurrentThenSwitchToEnglish() {
         val hwnd = WinNative.INSTANCE.GetForegroundWindow()
@@ -33,7 +33,6 @@ class WinInputMethodSwitcher : InputMethodSwitcher {
         }
         val hwnd = WinNative.INSTANCE.GetForegroundWindow()
         switchToInputSource(hwnd, lastInputSource)
-        lastInputSource = -1
     }
 
     override fun switchToEnglish() {
